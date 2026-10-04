@@ -1,9 +1,10 @@
 # mate-redshift
 
-A **Night Light** settings dialog for MATE that configures and controls
+A **Night Light Settings** dialog for MATE that configures and controls
 [redshift-gtk](http://jonls.dk/redshift/). It appears in MATE Control Center
-(Personal) and does not add a tray icon of its own: the tray icon is still
-plain redshift-gtk.
+(Look&Feel or Personal).
+
+![Screenshot](screenshot.png)
 
 ## How it integrates with redshift-gtk
 
