@@ -1,0 +1,31 @@
+#!/usr/bin/python3
+"""Stand-in for redshift: speaks the same verbose protocol redshift-gtk
+parses, never touches the screen, and logs what it was asked to do."""
+import os, signal, sys, time
+
+log = open(os.environ['FAKE_REDSHIFT_LOG'], 'a', buffering=1)
+args = sys.argv[1:]
+log.write('run %s\n' % ' '.join(args))
+
+if '-p' in args:
+    print('Period: Night\nColor temperature: 4100K')
+    sys.exit(0)
+if '-O' in args or '-x' in args:
+    sys.exit(0)
+
+enabled = True
+def status():
+    print('Status: %s' % ('Enabled' if enabled else 'Disabled'), flush=True)
+    log.write('status %s\n' % ('on' if enabled else 'off'))
+
+def toggle(*_):
+    global enabled
+    enabled = not enabled
+    status()
+
+signal.signal(signal.SIGUSR1, toggle)
+signal.signal(signal.SIGINT, lambda *_: sys.exit(0))
+status()
+print('Color temperature: 4100K\nPeriod: Night\nLocation: 48.10 N, 11.60 E', flush=True)
+while True:
+    time.sleep(1)

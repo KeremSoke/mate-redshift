@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Night Light Settings
+GenericName=Color temperature
+Comment=Make the screen warmer at night (redshift)
+Exec=mate-redshift
+Icon=redshift
+Terminal=false
+Categories=GTK;Settings;DesktopSettings;
+# Can be also under X-MATE-PersonalSettings;
+Keywords=redshift;night;light;color;temperature;blue;
+StartupNotify=true
