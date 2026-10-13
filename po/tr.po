@@ -1,0 +1,249 @@
+# Turkish translations for mate-redshift.
+# Copyright (C) 2026 mate-redshift authors
+# This file is distributed under the same license as the mate-redshift package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-redshift\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 18:04-0700\n"
+"PO-Revision-Date: 2026-10-12 18:10-0700\n"
+"Last-Translator: Kerem Söke\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/mate-redshift.desktop:3
+msgid "Night Light"
+msgstr "Gece Işığı"
+
+#: data/mate-redshift.desktop:4 src/window.vala:336
+msgid "Color temperature"
+msgstr "Renk sıcaklığı"
+
+#: data/mate-redshift.desktop:5
+msgid "Make the screen warmer at night (redshift)"
+msgstr "Geceleri ekranı daha sıcak yap (redshift)"
+
+#. Can be also under X-MATE-PersonalSettings;
+#: data/mate-redshift.desktop:11
+msgid "redshift;night;light;color;temperature;blue;"
+msgstr "redshift;gece;ışık;renk;sıcaklık;mavi;"
+
+#: src/main.vala:51 src/window.vala:101 src/window.vala:254
+msgid "Night Light Settings"
+msgstr "Gece Işığı Ayarları"
+
+#: src/window.vala:226
+msgid "_Help"
+msgstr "_Yardım"
+
+#: src/window.vala:227
+msgid "_About"
+msgstr "_Hakkında"
+
+#: src/window.vala:229
+msgid "_Quit"
+msgstr "_Çık"
+
+#: src/window.vala:232
+msgid "_Night Light"
+msgstr "_Gece Işığı"
+
+#: src/window.vala:247
+msgid "Could not open help"
+msgstr "Yardım açılamadı"
+
+#: src/window.vala:257
+msgid "Night light settings for MATE, powered by redshift-gtk."
+msgstr "MATE için gece ışığı ayarları, redshift-gtk ile çalışır."
+
+#: src/window.vala:259
+msgid "Redshift website"
+msgstr "Redshift web sitesi"
+
+#: src/window.vala:308
+msgid "Enable night light"
+msgstr "Gece ışığını etkinleştir"
+
+#: src/window.vala:319
+msgid ""
+"Night light makes the screen colours warmer at night to reduce eye strain.\n"
+"It is applied by redshift-gtk, which keeps running in the notification area."
+msgstr ""
+"Gece ışığı, göz yorgunluğunu azaltmak için geceleri ekran renklerini daha sıcak yapar.\n"
+"Bildirim alanında çalışmaya devam eden redshift-gtk tarafından uygulanır."
+
+#. The label turns into a spinner while redshift-gtk restarts.
+#: src/window.vala:363
+msgid "Apply"
+msgstr "Uygula"
+
+#: src/window.vala:369
+msgid "Save the settings and restart redshift-gtk to use them"
+msgstr "Ayarları kaydet ve kullanmak için redshift-gtk uygulamasını yeniden başlat"
+
+#: src/window.vala:382
+msgid "Automatic"
+msgstr "Özdevinimli"
+
+#: src/window.vala:383
+msgid "Manual schedule"
+msgstr "Elle zamanlama"
+
+#: src/window.vala:384
+msgid "Automatic follows sunset and sunrise at your location."
+msgstr "Özdevinimli kip, konumunuzdaki gün batımı ve gün doğumunu izler."
+
+#: src/window.vala:386
+msgid "Schedule"
+msgstr "Zamanlama"
+
+#: src/window.vala:389
+msgid "Detect automatically"
+msgstr "Özdevimli algıla"
+
+#: src/window.vala:390
+msgid "Set manually"
+msgstr "Elle ayarla"
+
+#: src/window.vala:392
+msgid "Location"
+msgstr "Konum"
+
+#: src/window.vala:396
+msgid "Degrees north; use negative values for the southern hemisphere."
+msgstr "Kuzey derecesi; güney yarımküre için negatif değerler kullanın."
+
+#: src/window.vala:398
+msgid "Latitude"
+msgstr "Enlem"
+
+#: src/window.vala:402
+msgid "Degrees east; use negative values west of Greenwich."
+msgstr "Doğu derecesi; Greenwich'in batısı için negatif değerler kullanın."
+
+#: src/window.vala:404
+msgid "Longitude"
+msgstr "Boylam"
+
+#: src/window.vala:406
+msgid "Turn on at"
+msgstr "Açılma saati"
+
+#: src/window.vala:407
+msgid "Turn off at"
+msgstr "Kapanma saati"
+
+#: src/window.vala:409
+msgid ""
+"Night light has to turn on in the evening and off in the morning (the "
+"schedule must cross midnight)."
+msgstr ""
+"Gece ışığı akşam açılıp sabah kapanmalıdır (zamanlama gece yarısını aşmalıdır)."
+
+#: src/window.vala:427
+msgid "Could not change autostart"
+msgstr "Özdevinimli başlatma değiştirilemedi"
+
+#: src/window.vala:431
+msgid "Start at login"
+msgstr "Oturum açılışında başlat"
+
+#: src/window.vala:435
+msgid "30 min"
+msgstr "30 dk"
+
+#: src/window.vala:435
+msgid "1 hour"
+msgstr "1 saat"
+
+#: src/window.vala:435
+msgid "2 hours"
+msgstr "2 saat"
+
+#: src/window.vala:442
+msgid "Suspend for"
+msgstr "Askıya alma süresi"
+
+#: src/window.vala:464
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: src/window.vala:472
+msgid "6500 K is neutral. Lower values are warmer."
+msgstr "6500 K nötrdür. Daha düşük değerler daha sıcaktır."
+
+#: src/window.vala:482
+msgid "Daytime temperature (K)"
+msgstr "Gündüz sıcaklığı (K)"
+
+#: src/window.vala:502
+msgid "Night brightness"
+msgstr "Gece parlaklığı"
+
+#: src/window.vala:512
+msgid "Smooth transitions"
+msgstr "Yumuşak geçişler"
+
+#: src/window.vala:537
+#, c-format
+msgid "Settings file: %s"
+msgstr "Ayarlar dosyası: %s"
+
+#: src/window.vala:632
+msgid "Could not save settings"
+msgstr "Ayarlar kaydedilemedi"
+
+#: src/window.vala:678
+#, c-format
+msgid "Suspended until %s"
+msgstr "%s saatine kadar askıya alındı"
+
+#: src/window.vala:680
+msgid "redshift-gtk is not running"
+msgstr "redshift-gtk çalışmıyor"
+
+#: src/window.vala:689
+msgid "Applying settings…"
+msgstr "Ayarlar uygulanıyor…"
+
+#: src/window.vala:691
+msgid "redshift-gtk is not running."
+msgstr "redshift-gtk çalışmıyor."
+
+#: src/window.vala:693
+msgid "Connected to redshift-gtk."
+msgstr "redshift-gtk bağlantısı kuruldu."
+
+#: src/window.vala:695
+msgid ""
+"redshift-gtk has no tray menu on D-Bus (is the Ayatana or libappindicator "
+"GObject introspection package installed?). Toggling works; suspend and tray "
+"sync do not."
+msgstr ""
+"redshift-gtk için D-Bus üzerinde tepsi menüsü yok (Ayatana veya libappindicator "
+"GObject introspection paketi kurulu mu?). Buna rağmen açma/kapama çalışır ancak "
+"askıya alma ve tepsi eşitlemesi çalışmaz."
+
+#: src/window.vala:697
+msgid "Restart"
+msgstr "Yeniden başlat"
+
+#: src/window.vala:697
+msgid "Start"
+msgstr "Başlat"
+
+#: src/window.vala:700
+#, c-format
+msgid "Restart redshift-gtk (PID %d) to reload settings"
+msgstr "Ayarları yeniden yüklemek için redshift-gtk uygulamasını yeniden başlat (PID %d)"
+
+#: src/window.vala:704
+#, c-format
+msgid ""
+"redshift-gtk was started with %s, which overrides some of these settings."
+msgstr ""
+"redshift-gtk %s ile başlatıldığından bu ayarlardan bazılarını geçersiz olacaktır."
