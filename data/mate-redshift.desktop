@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Night Light Settings
+Name=Night Light
 GenericName=Color temperature
 Comment=Make the screen warmer at night (redshift)
 Exec=mate-redshift

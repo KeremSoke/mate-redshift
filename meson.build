@@ -4,10 +4,12 @@ project('mate-redshift', 'vala', 'c',
   meson_version: '>= 0.59')
 
 add_project_arguments('-DGETTEXT_PACKAGE="mate-redshift"',
+  '-DLOCALEDIR="@0@"'.format(get_option('prefix') / get_option('localedir')),
   '-DPACKAGE_VERSION="@0@"'.format(meson.project_version()),
   '-w', language: 'c')
 
 valac = meson.get_compiler('vala')
+i18n = import('i18n')
 
 executable('mate-redshift',
   'src/main.vala',
@@ -24,8 +26,14 @@ executable('mate-redshift',
   ],
   install: true)
 
-install_data('data/mate-redshift.desktop',
+i18n.merge_file(
+  input: 'data/mate-redshift.desktop',
+  output: 'mate-redshift.desktop',
+  type: 'desktop',
+  po_dir: 'po',
   install_dir: get_option('datadir') / 'applications')
+
+subdir('po')
 
 integration_test = executable('integration-test',
   'tests/integration.vala',

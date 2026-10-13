@@ -20,6 +20,12 @@
 [CCode (cname = "PACKAGE_VERSION")]
 extern const string PACKAGE_VERSION;
 
+[CCode (cname = "GETTEXT_PACKAGE")]
+extern const string GETTEXT_PACKAGE;
+
+[CCode (cname = "LOCALEDIR")]
+extern const string LOCALEDIR;
+
 namespace MateRedshift {
 
 public class App : Gtk.Application {
@@ -38,6 +44,9 @@ public class App : Gtk.Application {
 
 int main (string[] args) {
     Intl.setlocale (LocaleCategory.ALL, "");
+    Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+    Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    Intl.textdomain (GETTEXT_PACKAGE);
     Environment.set_prgname ("mate-redshift");
     Environment.set_application_name (_("Night Light Settings"));
     return new MateRedshift.App ().run (args);
